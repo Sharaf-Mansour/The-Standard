@@ -31,4 +31,4 @@ jobs:
                 uses: softprops/action-gh-release@v1
                 with:
                     files: The-Standard.pdf
-                    token: "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"
+                    token: ${{ secrets.RELEASE_TOKEN }}
