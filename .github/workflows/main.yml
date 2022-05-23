@@ -12,6 +12,7 @@ jobs:
             -   name: Generate PDF test
                 run: |
                     sudo apt install -y weasyprint
+                    command='weasyprint -s https://raw.githubusercontent.com/Sharaf-Mansour/The-Standard/master/style.css input output'
                     command='/usr/bin/weasyprint The-Standard.html'
                     IFS=$'\n'
                     echo "<!DOCTYPE html><html><head><title>The Standard</title>
