@@ -1,5 +1,5 @@
      @page {
-        size: A4;
+        size: A4 !important;
     }
 
     .highlight,
@@ -49,7 +49,7 @@ svg {
 
 pre,
 span {
-    font-size: 8px !important;
+    font-size: 9px !important;
     font-weight: bolder !important;
 }
 
@@ -79,13 +79,10 @@ td {
 }
 
 p {
-    margin: 15;
+    margin: 10px;
     line-height: 1.5 !important;
 }
 
-pre {
-    margin-left: 7;
-}
 
 h5 {
     margin: 0;
