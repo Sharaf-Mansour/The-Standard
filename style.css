@@ -25,7 +25,7 @@
         page-break-after: avoid !important;
     }
 
-    h1:not(:nth-child(2)), h1:not(:first-child) {
+    h1:not(:nth-child(2)){
         page-break-before: always;
     }
 
@@ -149,10 +149,6 @@ table {
 .pl-c2 {
     color: #fafbfc;
     background-color: #d73a49;
-}
-
-.pl-c2::before {
-    content: "^M";
 }
 
 .pl-sr .pl-cce {
