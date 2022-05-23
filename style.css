@@ -1,5 +1,4 @@
-@media print {
-    @page {
+     @page {
         size: A4;
     }
 
@@ -13,7 +12,7 @@
     tbody {
         page-break-inside: avoid;
         break-inside: avoid;
-        font-size: 10px;
+        font-size: 16px;
 
     }
 
@@ -32,7 +31,6 @@
     article:not(:first-child) {
         page-break-after: always;
     }
-}
 #readme{
 	margin-left: 50px;
 	margin-right: 25px;
