@@ -29,7 +29,7 @@
     h1:not(:first-child) {
         page-break-before: always;
     }
-    
+
 
     article:not(:first-child) {
         page-break-before: always;
@@ -47,7 +47,7 @@ svg {
 
 pre,
 span {
-    font-size: 8px;
+    font-size: 6px !important;
     font-weight: bolder !important;
 }
 
