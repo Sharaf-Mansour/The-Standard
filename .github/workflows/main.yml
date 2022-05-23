@@ -14,7 +14,7 @@ jobs:
                     sudo apt install -y weasyprint
                     command='/usr/bin/weasyprint The-Standard.html'
                     IFS=$'\n'
-                    echo "<!DOCTYPE html><html><head><title>The Standard</title><style> * { overflow-wrap: break-word; } .highlight { font-size: 10px; } </style></head><body><h1><center>The Standard</center></h1>$separator" > The-Standard.html
+                    echo "<!DOCTYPE html><html><head><title>The Standard</title><link rel="stylesheet" href="styles.css"></head><body><h1><center>The Standard</center></h1>$separator" > The-Standard.html
                     separator='<div style="page-break-after: always"></div>'
                     for file in $(find . | grep .md | grep -v ./README.md | sort -fg); do
                         jq -Rs . < $file > json.blob
