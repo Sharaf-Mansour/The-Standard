@@ -70,7 +70,7 @@ code {
 
 * {
     color: #000;
-    tab-size: 2;
+    tab-size: 2 !important;
     overflow-wrap: break-word; 
 }
 th,
