@@ -15,7 +15,13 @@
         font-size: 16px;
 
     }
-
+    th,
+    tr,
+    table,
+    thead,
+    tbody {
+        font-size: 10px !important;
+    }
     h1,
     h2,
     h3,
