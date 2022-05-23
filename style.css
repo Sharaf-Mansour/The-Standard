@@ -29,6 +29,7 @@
     h1:not(:first-child) {
         page-break-before: always;
     }
+    
 
     article:not(:first-child) {
         page-break-before: always;
