@@ -30,6 +30,7 @@ jobs:
                         echo "$separator" >> The-Standard.html
                     done
                     echo "</body></html>" >> The-Standard.html
+                    command='/usr/bin/weasyprint -s https://raw.githubusercontent.com/Sharaf-Mansour/The-Standard/master/style.css input output'
                     command="$command The-Standard.pdf"
                     bash -c $command
             -   name: Release
