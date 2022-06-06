@@ -1,6 +1,9 @@
 name: Push to GDCluster
 
-on: push
+on:
+  push:
+    branches:
+      - main
 
 jobs: 
     generate:
@@ -39,3 +42,7 @@ jobs:
                         The-Standard.pdf 
                         The-Standard.html
                     token: ${{ secrets.RELEASE_TOKEN }}
+            - name: Release Drafter
+              uses: release-drafter/release-drafter@v5.19.0
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
