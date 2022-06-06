@@ -13,7 +13,6 @@
         page-break-inside: avoid;
         break-inside: avoid;
         font-size: 16px;
-
     }
     th,
     tr,
@@ -22,6 +21,7 @@
     tbody {
         font-size: 10px !important;
     }
+
     h1,
     h2,
     h3,
